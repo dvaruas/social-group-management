@@ -1,0 +1,183 @@
+/*for the expanding icons */
+
+.dock {
+	position: relative; 
+	height: 50px; 
+	text-align: center;
+}
+.dock-container2 {
+	position: absolute;
+	height: 50px;
+	background: transparent;
+	padding-left: 20px;
+}
+a.dock-item2 {
+	display: block; 
+	font: bold 12px Arial, Helvetica, sans-serif;
+	width: 40px; 
+	color: #000; 
+	bottom: 0px; 
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+}
+.dock-item2 span {
+	display: none;
+	padding-left: 20px;
+}
+.dock-item2 img {
+	border: none; 
+	margin: 5px 10px 0px; 
+	width: 100%; 
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/* for menu bar */
+
+body{
+				font-family:Arial;
+			}
+span.reference{
+				position:fixed;
+				left:2px;
+				bottom:10px;
+				font-size:12px;
+			}
+span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				text-shadow:1px 1px 1px #000;
+				margin-right:30px;
+			}
+span.reference a:hover{
+				color:#ddd;
+			}
+ul.sdt_menu{
+				margin-top:150px;
+			}
+ul.sdt_menu{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size:12px;
+	width:690px;
+}
+ul.sdt_menu a{
+	text-decoration:none;
+	outline:none;
+}
+ul.sdt_menu li{
+	float:left;
+	width:170px;
+	height:10px;
+	position:relative;
+	cursor:pointer;
+}
+ul.sdt_menu li > a{
+	position:absolute;
+	top:0px;
+	left:-2px;
+	width:170px;
+	height:85px;
+	z-index:12;
+	background:transparent url(images/overlay.png) no-repeat bottom right;
+	-moz-box-shadow:0px 0px 2px #000 inset;
+	-webkit-box-shadow:0px 0px 2px #000 inset;
+	box-shadow:0px 0px 2px #000 inset;
+}
+ul.sdt_menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:0px;
+	bottom:0px;
+	left:85px;
+	z-index:100;
+	-moz-box-shadow:0px 0px 4px #000;
+	-webkit-box-shadow:0px 0px 4px #000;
+	box-shadow:0px 0px 4px #000;
+}
+ul.sdt_menu li span.sdt_wrap{
+	position:absolute;
+	top:25px;
+	left:0px;
+	width:170px;
+	height:60px;
+	z-index:15;
+}
+ul.sdt_menu li span.sdt_active{
+	position:absolute;
+	background:#111;
+	top:85px;
+	width:170px;
+	height:0px;
+	left:0px;
+	z-index:14;
+	-moz-box-shadow:0px 0px 4px #000 inset;
+	-webkit-box-shadow:0px 0px 4px #000 inset;
+	box-shadow:0px 0px 4px #000 inset;
+}
+ul.sdt_menu li span span.sdt_link{
+	margin-left:15px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px #000;
+}
+ul.sdt_menu li span span.sdt_link{
+	color:#fff;
+	font-size:24px;
+	float:left;
+	clear:both;
+}
+
+/*------------------------------------------------------------------------*/
+
+/* for search box */
+
+.loginboxdiv{
+margin:0px;
+height:40px;
+width:240px;
+background:url("images/searchbox1.png");
+}
+.loginbox
+{
+position:relative;
+left:18%;
+top:8px;
+background:none;
+border:none;
+width:138px;
+height:16px;
+margin:0;
+padding:0.2em 0 0.2em 1px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+}
+
+/*-------------------------------------------------------------------------------*/
+/* for display over picture */
+.faux p
+{ 	position:absolute;
+	z-index:100;
+	font-family:"Book Antiqua";
+	font-size:14px;
+	color:transparent;
+	cursor:pointer;
+	margin:0px;
+	padding:0px;
+}
+.faux p:hover
+{	
+	background-color: #FFF;
+}
+.faux:hover p
+{	
+	color:#000;
+}
+.faux:hover img
+{
+	opacity:0.5;
+}

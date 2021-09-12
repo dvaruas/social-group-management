@@ -1,0 +1,81 @@
+/* CSS Document */
+
+/*----------------------------index,php-----------------------------------*/
+
+
+
+body {
+	background-image: url(images/background.jpg);
+	-moz-background-size: cover;
+	background-size: cover;
+	background-repeat: repeat;
+}
+#userlog
+{
+	position:absolute;
+	left: 40%;
+	top: 50%;
+}
+#passlog
+{
+	position:absolute;
+	left: 42%;
+	top: 57%;
+}
+#image
+{
+	position:absolute;
+	left: 45%;
+	top: 67%;
+}
+#remember
+{	position: absolute;
+	left: 55%;
+	top: 65%;
+}
+.loginboxdiv{
+margin:0px;
+height:50px;
+width:268px;
+background:url(images/userid.png) no-repeat bottom ;
+}
+.loginbox
+{
+position:relative;
+left:18px;
+top:12px;
+background:none;
+border:none;
+width:200px;
+height:18px;
+margin:0;
+padding: 2px 7px 0px 7px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+}
+.start {
+position: absolute;
+left: 0;
+top: 0;
+z-index: 10;
+}
+.end {
+position: absolute;
+left: 0;
+top: 0;
+}
+#alien
+{
+	font: Verdana;
+	font-size: 14px;
+	position: absolute;
+	left: 80%;
+	top: 27%;
+	width: 150px;
+	color:#000;
+	font-weight:bold;
+}
+#alien:hover
+{	
+	text-decoration:underline;
+}

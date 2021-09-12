@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<strong>
+Edit profile
+<title>Jack dnd Jill.com</title>
+<link rel="stylesheet" type="text/css" href="tabs.css" />
+<script type="text/javascript" src="jquery1.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	$(".tab_content").hide();
+	$(".tab_content:first").show(); 
+
+	$("ul.tabs li").hover(function() {
+		$("ul.tabs li").removeClass("active");
+		$(this).addClass("active");
+		$(".tab_content").hide();
+		var activeTab = $(this).attr("rel"); 
+		$("#"+activeTab).fadeIn(); 
+	});
+});
+
+</script> 
+
+<style type="text/css">
+
+	ul.tabs {
+		margin: 0;
+		padding: 0;
+		float: left;
+		list-style: none;
+		height: 32px;
+		border-bottom: 1px solid #999999;
+		border-left: 1px solid #999999;
+		width: 100%;
+	}
+	ul.tabs li {
+		float: left;
+		margin: 0;
+		cursor: pointer;
+		padding: 0px 21px ;
+		height: 31px;
+		line-height: 31px;
+		border: 1px solid #999999;
+		border-left: none;
+		font-weight: bold;
+		background: #EEEEEE;
+		overflow: hidden;
+		position: relative;
+	}
+	ul.tabs li:hover {
+		background: #CCCCCC;
+	}	
+	ul.tabs li.active{
+		background: #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	.tab_container {
+		border: 1px solid #999999;
+		border-top: none;
+		clear: both;
+		float: left; 
+		width: 100%;
+		background: #FFFFFF;
+	}
+	.tab_content {
+		padding: 20px;
+		font-size: 1.2em;
+		display: none;
+	}
+	#container {
+		width: 600px;
+		margin: 0 auto;	
+	}
+</style>
+
+</head>
+
+<body background="images/wall3.jpg">
+<!--<embed name="Made of tears"
+
+src="http://candyrat.com/artists/JoeSatriani/SuperColossal/clips/Clip%20-%20Joe%20Satriani%20-%20Super%20Colossal%20-%2009.mp3"
+loop="false"
+hidden="true"
+autostart="true">
+</embed>-->
+<div id="container" style="position:absolute; top:26%; left:26%">
+
+  <ul class="tabs"> 
+        <li class="active" rel="tab1"> Personal Details</li>
+		<li rel="tab2"> Education Details </li>
+        <li rel="tab3"> Interests </li>
+        <li rel="tab4"> Contact Information</li>
+        <li rel="tab5"> Interest </li>
+    </ul>
+
+<div class="tab_container" style="position:relative"> 
+
+     <div id="tab1" class="tab_content" style="background-image:url(images/tab11.jpg); width:auto; height:auto;">
+	 
+	 <tr>
+	  <td> <font face="chiller" size="6"> About me </font></td>
+	 <td>
+	 <form name="myform">
+<textarea name="mytext" cols="30" rows="5"
+onclick="document.myform.mytext.value='';">
+Write about your-self.This text would be visible to a user when he/she visits your profile.</textarea>
+</form>
+	 </td>
+	 </tr>
+	
+	 <br>
+	
+	 <tr>
+	 <td> <font face="chiller" size="5"> Languages I know </font></td>
+	  
+	  <td>
+	  <select>
+<option>Afrikaans</option>
+<option>Albanian</option>
+<option>Amharic</option>
+<option>Arabic</option>
+<option>Armenian</option>
+<option>Basque</option>
+<option>Bengali</option>
+<option>Bhojpuri</option>
+<option>Byelorussian</option>
+<option>Burmese</option>
+<option>Bulgarian</option>
+<option>Catalan</option>
+<option>Czech</option>
+<option>Chinese</option>
+<option>Croatian</option>
+<option>Danish</option>
+<option>Dari</option>
+<option>Dzongkha</option>
+<option>Dutch</option>
+<option>English</option>
+<option>Esperanto</option>
+<option>Estonian</option>
+<option>Faroese</option>
+<option>Farsi</option>
+<option>Finnish</option>
+<option>French</option>
+<option>Gaelic</option>
+<option>Galician</option>
+<option>German</option>
+<option>Greek</option>
+<option>Gaelic</option>
+<option>Galician</option>
+<option>German</option>
+<option>Greek</option>
+<option>Gujarati</option>
+<option>Hindi</option>
+<option>Icelandic</option>
+<option>Indonesian</option>
+<option>Inuktitut (Eskimo)</option>
+<option>Italian</option>
+<option>Japanese</option>
+<option>Kannad</option>
+<option>Khmer</option>
+<option>Korean</option>
+<option>Kurdish</option>
+<option>Laotian</option>
+<option>Latin</option>
+<option>Latvian</option>
+<option>Lappish</option>
+<option>Lithuanian</option>
+<option>Macedonian</option>
+<option>Malay</option>
+<option>Maltese</option>
+<option>Marathi</option>
+<option>Nepali</option>
+<option>Norwegian</option>
+<option>Pashto</option>
+<option>Polish</option>
+<option>Portuguese</option>
+<option>Romanian</option>
+<option>Russian</option>
+<option>Scots</option>
+<option>Serbian</option>
+<option>Slovak</option>
+<option>Slovenian</option>
+<option>Somali</option>
+<option>Spanish</option>
+<option>Swedish</option>
+<option>Swahili</option>
+<option>Tagalog-Filipino</option>
+<option>Tajik</option>
+<option>Tamil</option>
+<option>Telegu</option>
+<option>Thai</option>
+<option>Tibetan</option>
+<option>Tigrinya</option>
+<option>Tongan</option>
+<option>Turkish</option>
+<option>Turkmen</option>
+<option>Ucrainian</option>
+<option>Urdu</option>
+<option>Uzbek</option>
+<option>Vietnamese</option>
+<option>Welsh</option>
+</select>
+	  </td>	  
+	 </tr>
+	 
+	 <br><br>
+	 
+	<tr>
+	 <td> <font face="chiller" size="5"> Gender </font><td>
+	 <select>
+<option>Male</option>
+<option>Female</option>
+<option>None of the above</option>
+</select>
+	</tr>
+	 
+	 <br><br>
+	 
+	 <tr>
+	 <td> <font face="chiller" size="5"> Sexual orientation </font><td>
+	 <select>
+<option>Straight</option>
+<option>Gay</option>
+<option>Lesbian</option>
+<option>Bi</option>
+</select>
+	</tr>
+	
+	 <br><br>
+	 <tr>
+	 <td> <font face="chiller" size="5"> Relationship Status </font></td>
+	 <td>
+	 <select>
+<option>Not Saying</option>
+<option>Single</option>
+<option>Committed</option>
+<option>Engaged</option>
+<option>Married</option>
+<option>Awaiting divorce</option>
+<option>Divorced</option>
+<option>Widowed</option>
+<option>anulled</option>
+<option>Complicated</option>
+<option>Open relationship</option>
+</select>
+	 </td>
+	 </tr>
+	 
+	 <br><br>
+	 
+	 <tr>
+		 <td>
+		 	<input type="button" value="Submit"  style="position:relative; left:50%" />
+		 </td>
+	</tr>
+	
+	 </div>
+							<!-- about me end -->	 
+<!--------------------------------------------------------------------------------------------------->
+	 <div id="tab2" class="tab_content" style="background-image:url(images/tab24.jpg); width:auto; height:auto;"> 
+ 
+ 		 <tr>
+		 <td><font face="chiller" size="6"> Primary school </font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="School name" /></td>
+		 </tr>
+		
+ 
+ <br><br>
+         <tr>
+		 <td><font face="chiller" size="6"> High school </font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="High School name" /></td>
+		 </tr>
+		 <br><br>
+		 <tr>
+		 <td><font face="chiller" size="5"> Graduation </font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="College/University name" /></td>
+		 </tr>
+		 <br><br>
+		 <tr>
+		 <td><font face="chiller" size="5"> Post Graduation</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="College/University name" /></td>
+		 </tr>
+		 
+		 <br><br>
+		 <tr>
+		 <td><font face="chiller" size="5"> Other Qualification</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Qualifications" /></td>
+		 </tr>
+		 
+		 <br><br>
+		 <tr>
+		 <td><font face="chiller" size="5"> Employee</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Profession/Company name" /></td>
+		 </tr>
+		 <br><br>
+		 
+		  <tr>
+		 <td>
+		 	<input type="button" value="Submit"  style="position:relative; left:50%" />
+		 </td>
+	</tr>
+
+     </div><!-- #tab1 -->
+
+							<!-- Education details end -->	 
+<!--------------------------------------------------------------------------------------------------->
+
+     <div id="tab3" class="tab_content" style="background-image:url(images/tab3.jpg); width:auto; height:auto;"> 
+
+       
+	     <tr>
+		 <td><font face="chiller" size="5"> Favourite sport</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Sport name" /></td>
+		 </tr>
+		 <br><br>
+		
+		 <tr>
+		 <td><font face="chiller" size="5"> Television show </font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Show name" /></td>
+		 </tr>
+		 <br><br>
+		 
+		  <tr>
+		 <td><font face="chiller" size="5"> Favourite music</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter genre" /></td>
+		 </tr>
+		 <br><br>
+		 
+		 <td><font face="chiller" size="5">Hobbies/Interests</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter hobbies" /></td>
+		 </tr>
+		 <br><br>
+		 
+		 <td><font face="chiller" size="5"> Favourite books</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter political views" /></td>
+		 </tr>
+		 <br><br>
+		
+		 <tr>
+		 <td><font face="chiller" size="5"> Religious views</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter views" /></td>
+		 </tr>
+		 <br><br>
+		
+	     <tr>
+		 <td><font face="chiller" size="5"> Political views</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter political views" /></td>
+		 </tr>
+		 <br><br>
+		 
+		 <tr>
+		 <td>
+		 	<input type="button" value="Submit"  style="position:relative; left:50%" />
+		 </td>
+	</tr>
+		
+	        </div><!-- #tab2 -->
+			
+										<!-- Interests end -->	 
+<!--------------------------------------------------------------------------------------------------->
+
+			
+     <div id="tab4" class="tab_content" style="background-image:url(images/tab43.jpg); width:auto; height:auto;"> 
+
+     <tr>
+		 <td><font face="chiller" size="5"> E-mail id</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter email" /></td>
+		 <td><input type="button" value="Add another" /></td>
+		 </tr>
+	
+	<br><br>
+	
+	 <tr><td><font face="chiller" size="6"> Phone </font></td>
+	 </tr>
+	 <br>
+	 <tr>
+	    <td><font face="chiller" size="5"> Home </font></td>
+		<td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter Phone no" /></td>
+		 <td><input type="button" value="Add another" /></td>
+	 </tr>
+		 <br> 
+		 <tr>
+		 <td><font face="chiller" size="5"> Cell </font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter Cell no" /></td>
+		 <td><input type="button" value="Add another" /></td>
+		 </tr>
+		 
+		 <br><br>
+		 
+		 <tr><td><font face="chiller" size="6"> Address </font></td>
+		 </tr>
+	 <br>
+	     <tr>
+		 <td><font face="chiller" size="5"> House number</font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter House no" /></td>
+		 </tr>
+			
+			<br>
+		 
+		 <tr>
+		 <td><font face="chiller" size="5"> Town </font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter Town" /></td>
+		 </tr>
+		 
+			<br>	 
+		 
+		 <tr>
+		 <td><font face="chiller" size="5"> City </font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter City" /></td>
+		 </tr>
+
+				<br>
+
+		<tr>
+		<td><font face="chiller" size="5"> State </font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter State" /></td>
+		</tr>
+				<br>
+		<tr>
+		<td><font face="chiller" size="5"> Country </font></td>
+		 <td><input type="text" name="field-name-here" onclick="this.value='';" value="Enter country" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="submit" value="Submit" /></td>
+		</tr>
+     </div><!-- #tab3 -->
+
+									<!-- Contact Information end -->	 
+<!--------------------------------------------------------------------------------------------------->
+
+
+     <div id="tab5" class="tab_content"> 
+
+       <p><img src="images/portal.jpg"> <br />
+      	<strong>
+      	Portal 2 is an action shooter game from Valve Software that draws 
+      	from the original formula of innovative gameplay, story, and music,
+      	which earned the original Portal more than 70 industry accolades.
+      	</strong>
+       </p>
+
+     </div><!-- #tab4 --> 
+     
+ </div> <!-- .tab_container --> 
+
+</div> <!-- #container -->
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* CSS Document */
+body
+{background:url(images/register_b.jpg);
+}
+
+#form_table{
+	background-color:treansparent;
+	font-family: arial;
+	color:#000;
+}
+#form_table th {
+	text-align: center;
+	color: #000;
+	font-size: 14px;
+	}
+#form_table input{
+	background-color: #353535;
+	display: inline;
+	color: #ddd;
+	border:2px solid #444;
+	margin:2px 5px;
+	font-family: arial;
+	font-size: 13px;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+}
+#form_table input[type="submit"], #form_table input[type="button"] {
+	position:relative;
+	left:12%;
+	width: 170px;
+	}
+#form_table input[type="text"]{
+	width: 200px;
+	position:relative;
+	}
+#form_table input:focus{
+	background:#555;
+	}
+#form_table input + span, #form_table textarea + span {
+	display: none;
+	background:url(images/msg2.png) no-repeat left;
+	line-height: 32px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	padding:0px 35px;
+	position: absolute;
+	width: 180px;
+	
+	z-index:99;
+	}
